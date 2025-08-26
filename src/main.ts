@@ -23,6 +23,6 @@ app.useGlobalFilters(new RpcCustomerExceptionFilter())
 
   await app.listen(envs.port);
 
-  logger.log(`Gateway running or port ${envs.port}`)
+  logger.log(`Gateway running or port: ${envs.port}`)
 }
 bootstrap();
