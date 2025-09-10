@@ -3,10 +3,11 @@ import { ProductsModule } from './products/products.module';
 import { OrdersModule } from './orders/orders.module';
 import { NatsModule } from './transport/nats.module';
 import { AuthModule } from './auth/auth.module';
+import { HealhChekModule } from './health-check/health-check.module';
 
 
 @Module({
-  imports: [ProductsModule, OrdersModule, NatsModule, AuthModule],
+  imports: [ProductsModule, OrdersModule, NatsModule, AuthModule, HealhChekModule],
   controllers: [],
   providers: [],
 })
